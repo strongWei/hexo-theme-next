@@ -238,7 +238,7 @@ sidebar:
   # If commented, will be default for:
   # Muse | Mist: 320
   # Pisces | Gemini: 240
-  #width: 300
+  width: 300
 
   # Sidebar Display, available value (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
@@ -273,13 +273,13 @@ scroll_to_more: true
 save_scroll: false
 
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
+excerpt_description: false
 
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
   enable: false
-  length: 150
+  length: 360
 
 # Read more button
 # If true, the read more button would be displayed in excerpt section
@@ -312,9 +312,9 @@ codeblock:
   border_radius:
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result
-    show_result: false
+    show_result: true
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -378,7 +378,7 @@ custom_logo:
 # Code Highlight theme
 # Available values: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night blue
 
 # Enable "cheers" for archive page.
 cheers_enabled: true
@@ -410,15 +410,14 @@ font:
   # Global font settings used for all elements in <body>.
   global:
     external: true
-    family: Lato
-    size:
-
+    family: sans-serif
+    size: 
   # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
   # Fallback to `global` font settings.
   headings:
     external: true
     family:
-    size:
+    size: 
 
   # Font settings for posts.
   # Fallback to `global` font settings.
