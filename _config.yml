@@ -139,8 +139,8 @@ exturl: false
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -151,16 +151,15 @@ menu_settings:
   icons: true
   badges: false
 
-
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -212,9 +211,9 @@ avatar:
   # in theme directory(source/images): /images/avatar.gif
   # in site  directory(source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /uploads/avatar.png
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
   # If true, the avatar would be rotated with the cursor.
@@ -223,12 +222,12 @@ avatar:
 # Table Of Contents in the Sidebar
 toc:
   enable: true
+
   # Automatically add list number to toc.
   number: true
+
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
-  # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` var.
-  max_depth: 6
 
 sidebar:
   # Sidebar Position, available value: left | right (only for Pisces | Gemini).
@@ -255,8 +254,10 @@ sidebar:
   offset: 12
   # Back to top in sidebar (only for Pisces | Gemini).
   b2t: false
+
   # Scroll percent label in b2t button.
   scrollpercent: false
+
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
 
@@ -368,8 +369,8 @@ android_chrome_color: "#222"
 # Custom Logo.
 # Do not support Scheme Mist currently.
 # Options:
-#   enabled: If true, will enable custom logo
-#   image: Images's url, replace it with specific image
+#   enabled: [true/false] - Replace with specific image
+#   image: url-of-image   - Images's url
 custom_logo:
   enabled: false
   image:
@@ -522,6 +523,7 @@ changyan:
   appid:
   appkey:
 
+
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
@@ -574,7 +576,7 @@ gitalk:
 #    button | slide
 # Warning: Baidu Share does not support https.
 #baidushare:
-##  type: button
+##  type: slide
 
 # addthis Share, see: https://www.addthis.com
 #add_this_id:
@@ -631,7 +633,7 @@ needmoreshare2:
 
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights
-#application_insights:
+# application_insights:
 
 # Post widgets & FB/VK comments settings.
 # ---------------------------------------------------------------
@@ -703,11 +705,13 @@ busuanzi_count:
   post_views: true
   post_views_icon: eye
 
+
 # Tencent analytics ID
 #tencent_analytics:
 
 # Tencent MTA ID
 #tencent_mta:
+
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
 baidu_push: false
@@ -747,7 +751,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -832,7 +836,7 @@ motion:
 # Please, choose only any one variant, do not need to install both.
 # For install 2.x: https://github.com/theme-next/theme-next-fancybox
 # For install 3.x: https://github.com/theme-next/theme-next-fancybox3
-fancybox: false
+fancybox: true
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
@@ -856,10 +860,10 @@ pace_theme: pace-theme-minimal
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest:
-  enable: false
-  onmobile: true # display on mobile or not
+  enable: true
+  onmobile: false # display on mobile or not
   color: '0,0,255' # RGB values, use ',' to separate
-  opacity: 0.5 # the opacity of line: 0~1
+  opacity: 0.5  # the opacity of line: 0~1
   zIndex: -1 # z-index property of the background
   count: 99 # the number of lines
 
@@ -872,8 +876,9 @@ canvas_lines: false
 # canvas_sphere
 canvas_sphere: false
 
-# Canvas-ribbon
+# Only fit scheme Pisces
 # Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
+# Canvas-ribbon
 # size: The width of the ribbon.
 # alpha: The transparency of the ribbon.
 # zIndex: The display level of the ribbon.
@@ -1034,15 +1039,15 @@ vendors:
   # Internal version: 1.4.0
   # See: https://github.com/gitalk/gitalk
   # Example:
-  # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js
-  # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.css
+  # gitalk_js: https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js
+  # gitalk_css: https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.css
   gitalk_js:
   gitalk_css:
 
   # Internal version: 0.7.3
   # See: https://github.com/emn178/js-md5
   # Example:
-  # md5: //cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js
+  # md5: https://cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js
   md5:
 
 # Assets
